@@ -5,7 +5,7 @@ pipeline {
         skipStagesAfterUnstable()
     }
     triggers {
-        pollSCM('H/2 * * * *')
+        pollSCM('*/2 * * * *')
     }
     stages {
         stage('Run Sh') { 
